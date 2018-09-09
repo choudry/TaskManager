@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.ImageView;
 
 import sultaani.com.taskmanager.Helper.Utill;
 
@@ -18,16 +17,7 @@ public class SplashScreen extends AppCompatActivity {
          android.support.v7.app.ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        ImageView iv_company;
-        iv_company = (ImageView) findViewById(R.id.logo);
-        //iv_company.animate().rotationX(360).setDuration(2000).start();
 
-//        ProgressBar mprogressbar = (ProgressBar) findViewById(R.id.progressBar);
-//        //ObjectAnimator animc = ObjectAnimator.ofInt(mprogressbar, "alpha", 0, 100);
-//        animc.setDuration(1000);
-//        animc.setInterpolator(new DecelerateInterpolator());
-//        Thread.setDefaultUncaughtExceptionHandler(new TopExceptionHandler(this));
-//        animc.start();
 
 
 
