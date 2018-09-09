@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:paddingTop="10dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp">
+        <TextView
+            android:id="@+id/tvdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="28 Jan 2018"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:id="@+id/tvtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/ivdelete"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:text="09:55"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            />
+
+        <ImageView
+            android:id="@+id/ivdelete"
+            android:layout_width="40dp"
+            android:layout_height="45dp"
+            android:src="@drawable/delete"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:text="Title"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tvdescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:text="All the analysis, design and system development have been accomplished by the undersigned. Moreover, this project has not been submitted to any other college or university."/>
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:context="sultaani.com.taskmanager.UserTaskActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_light"
+        android:alpha="0.97">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/app_name"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff"/>
+                    <ImageView
+                        android:id="@+id/ivchat"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:textAllCaps="false"
+                        android:src="@drawable/chat"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:layout_toStartOf="@+id/overflowicon"
+                        android:layout_marginEnd="8dp"
+                        android:layout_centerVertical="true"
+                        android:text="Complete"
+                        />
+
+                    <ImageView
+                        android:id="@+id/overflowicon"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/menu"
+
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.AppBarLayout>
+        <ListView
+            android:id="@+id/lvusertasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/appbar"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
